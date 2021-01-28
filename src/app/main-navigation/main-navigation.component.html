@@ -1,0 +1,30 @@
+<div class="container" [class.is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="toolbar" style="width: 100%">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon></button>
+    <h1 class="app-name">KingStack Farm</h1>
+    <div class="nav-icons">
+      <span class="material-icons nav-icon">account_circle</span>
+      <span class="material-icons nav-icon">shopping_cart</span>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container"
+                         [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav opened="true" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <a mat-list-item routerLink="." ><span class="material-icons nav-icon">account_box</span>Account Management</a>
+        <hr class="side-nav-line-break">
+        <a mat-list-item routerLink="." ><span class="material-icons nav-icon">savings</span>Welcome To The Farm</a>
+        <a mat-list-item routerLink="." ><span class="material-icons nav-icon">food_bank</span>Services & Pricing</a>
+        <a mat-list-item routerLink="." ><span class="material-icons nav-icon">search</span>Lineage Viewer</a>
+        <a mat-list-item routerLink="." ><span class="material-icons nav-icon">photo</span>Photo Gallery</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <app-main-content></app-main-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
