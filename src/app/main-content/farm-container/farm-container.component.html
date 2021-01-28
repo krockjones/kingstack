@@ -1,0 +1,24 @@
+  <mat-grid-list cols="1" rowHeight="512px">
+    <mat-grid-tile>
+      <mat-card class="farm-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <div class="farm-container">
+          <img class="farm-field" src="assets/img/field.jpg">
+       <img class="farm-barn" src="assets/img/red-barn.png">
+        <img class="farm-pig-start" src="assets/img/red-piggy.png">
+          <img class="farm-meat-stand-start" src="assets/img/meat-stand.png">
+          </div>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <app-footer></app-footer>

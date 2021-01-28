@@ -16,13 +16,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MaterialsModule } from './resources/modules/materials/materials.module';
 import { FooterComponent } from './footer/footer.component';
+import { FarmContainerComponent } from './main-content/farm-container/farm-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavigationComponent,
     MainContentComponent,
-    FooterComponent
+    FooterComponent,
+    FarmContainerComponent
   ],
   imports: [
     BrowserModule,

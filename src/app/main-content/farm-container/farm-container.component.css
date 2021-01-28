@@ -1,0 +1,35 @@
+.farm-card {
+  width: 100%;
+}
+
+.farm-container {
+  display: block;
+  position: relative;
+    width: 100%;
+}
+
+.farm-barn {
+  position: absolute;
+  left: 150px;
+}
+
+.farm-field {
+  width: 768px;
+  height: auto;
+}
+
+.farm-pig-start {
+  width: 75px;
+  height: auto;
+  position: absolute;
+  left: 10px;
+  bottom: -10px;
+}
+
+.farm-meat-stand-start {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  left: 625px;
+  bottom: -10px;
+}
