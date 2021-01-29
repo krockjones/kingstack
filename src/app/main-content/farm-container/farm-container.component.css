@@ -416,6 +416,10 @@
   margin-top: 25px;
 }
 
-.mat-grid-tile  {
-  position: inherit !important;
+.farm-tree {
+  position: absolute;
+  left: -210px;
+  bottom: 0;
+  height: 300px;
+  width: auto;
 }
