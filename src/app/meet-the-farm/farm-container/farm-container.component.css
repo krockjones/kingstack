@@ -419,7 +419,7 @@
 .farm-tree {
   position: absolute;
   left: -210px;
-  bottom: 0;
+  bottom: -7px;
   height: 300px;
   width: auto;
 }

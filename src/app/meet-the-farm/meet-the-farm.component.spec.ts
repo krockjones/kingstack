@@ -7,15 +7,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
-import { MainContentComponent } from './main-content.component';
+import { MeetTheFarmComponent } from './meet-the-farm.component';
 
 describe('MainContentComponent', () => {
-  let component: MainContentComponent;
-  let fixture: ComponentFixture<MainContentComponent>;
+  let component: MeetTheFarmComponent;
+  let fixture: ComponentFixture<MeetTheFarmComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [MainContentComponent],
+      declarations: [MeetTheFarmComponent],
       imports: [
         NoopAnimationsModule,
         LayoutModule,
@@ -29,7 +29,7 @@ describe('MainContentComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainContentComponent);
+    fixture = TestBed.createComponent(MeetTheFarmComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,8 +1,44 @@
 .fixed-nav-bottom {
-    position: absolute;
+    position: fixed;
     bottom: 7px;
-    width: 100%;
+    width: 80%;
+    opacity: .5;
+    background-color: white;
     text-align: center;
+}
+
+.fixed-nav-container {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 7px;
+}
+
+.fixed-nav-bottom:hover {
+  animation: transition 500ms forwards;
+
+  -webkit-animation: transition 500ms forwards;
+  -moz-animation: transition 500ms forwards;
+  -o-animation: transition 500ms forwards;
+}
+
+@keyframes transition {
+  from {opacity: .5;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes transition {
+   from {opacity: .5;}
+  to {opacity: 1;}
+}
+
+@-moz-keyframes transition {
+   from {opacity: .5;}
+  to {opacity: 1;}
+}
+
+@-o-keyframes transition {
+   from {opacity: .5;}
+  to {opacity: 1;}
 }
 
 .inline-nav-icon {
@@ -14,3 +50,4 @@
     height: 40px;
     margin: 3px 10px 3px;
 }
+
