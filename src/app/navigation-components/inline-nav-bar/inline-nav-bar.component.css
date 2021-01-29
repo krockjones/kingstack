@@ -1,0 +1,16 @@
+.fixed-nav-bottom {
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    text-align: center;
+}
+
+.inline-nav-icon {
+  margin: 3px 7px 3px;
+}
+
+.inline-nav-button {
+    width: 190px;
+    height: 40px;
+    margin: 3px 10px 3px;
+}

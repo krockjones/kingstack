@@ -413,6 +413,7 @@
   border: dimgray;
   border-width: 10px;
   border-style: dashed;
+  margin-top: 25px;
 }
 
 .mat-grid-tile  {
