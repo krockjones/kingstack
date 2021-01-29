@@ -1,3 +1,8 @@
+:root {
+  --text-block-width: 75px;
+  --pig-epiphany: 565px, 0;
+}
+
 .farm-card {
   margin: 0 50% 0 50%;
 }
@@ -5,7 +10,9 @@
 .farm-container {
   display: block;
   position: relative;
-    width: 100%;
+  width: 100%;
+  height: 480px;
+  /*overflow: hidden;*/
 }
 
 .farm-barn {
@@ -18,12 +25,66 @@
   height: auto;
 }
 
-.farm-pig-start {
+
+.farm-pig-dialog {
+  left: 360px;
+  bottom: 60px;
+  width: 175px;
+  height: auto;
+  position: absolute;
+}
+
+.farm-pig {
   width: 75px;
   height: auto;
   position: absolute;
-  left: 10px;
+}
+
+#pig-start {
+  left: -130px;
   bottom: -10px;
+}
+
+.pig-walking {
+  animation: walking 4s forwards;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: walking 4s forwards;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: walking 4s forwards;
+  -moz-animation-delay: 1s;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: walking 4s forwards;
+  -o-animation-delay: 1s;
+  -o-animation-fill-mode: forwards;
+}
+
+@keyframes walking {
+  100% {
+    transform: translateX(565px)
+  }
+}
+
+@-webkit-keyframes walking {
+  100% {
+    -webkit-transform: translateX(565px);
+  }
+}
+
+@-moz-keyframes walking {
+  100% {
+    -moz-transform: translateX(565px);
+  }
+}
+
+@-o-keyframes walking {
+  100% {
+    -o-transform: translateX(565px);
+  }
 }
 
 .farm-meat-stand-start {
@@ -32,4 +93,328 @@
   position: absolute;
   left: 625px;
   bottom: -10px;
+}
+
+.fade-in {
+  opacity: 0;
+
+  animation: fadeIn ease 1s;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: fadeIn ease 1s;
+  -webkit-animation-delay: 4.5s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: fadeIn ease 1s;
+  -moz-animation-delay: 4.5s;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: fadeIn ease 1s;
+  -o-animation-delay: 4.5s;
+  -o-animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut ease 1s;
+  animation-delay: 14s;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: fadeOut ease 1s;
+  -webkit-animation-delay: 14s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: fadeOut ease 1s;
+  -moz-animation-delay: 14s;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: fadeOut ease 1s;
+  -o-animation-delay: 14s;
+  -o-animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.pig-last-words {
+  opacity: 0;
+}
+
+#pig-last-words-position {
+  position: absolute;
+  bottom: 140px;
+  left: 395px;
+  height: auto;
+  width: var(--text-block-width);
+}
+
+.typewriter {
+  font-family: monospace;
+  font-size: xx-large;
+  font-weight: bolder;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .25em; /* Adjust as needed */
+
+  animation: fadeIn ease .1s, typing 3.5s steps(10, end), blink-caret .75s step-end infinite;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: fadeIn ease .1s, typing 3.5s steps(10, end), blink-caret .75s step-end infinite;
+  -webkit-animation-delay: 4.5s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: fadeIn ease .1s, typing 3.5s steps(10, end), blink-caret .75s step-end infinite;
+  -moz-animation-delay: 4.5s;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: fadeIn ease .5s, typing 3.5s steps(10, end), blink-caret .75s step-end infinite;
+  -o-animation-delay: 4.5s;
+  -o-animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0}
+  to { width: var(--text-block-width) }
+}
+
+@-moz-keyframes typing {
+  from { width: 0}
+  to { width:var(--text-block-width) }
+}
+
+@-webkit-keyframes typing {
+  from { width: 0}
+  to { width: var(--text-block-width) }
+}
+
+@-o-keyframes typing {
+  from { width: 0}
+  to { width: var(--text-block-width) }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+@-moz-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+@-o-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+.farm-pig-poop {
+  position: absolute;
+  display: block;
+  left: 430px;
+  bottom: 22px;
+  transform: scale(0);
+  -o-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+}
+
+.pig-pooping {
+  animation: pig-pooping;
+  animation-duration: .5s;
+  animation-delay: 7.5s;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: pig-pooping;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: 7.5s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: pig-pooping;
+  -moz-animation-duration: .5s;
+  -moz-animation-delay: 7.5s;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: pig-pooping;
+  -o-animation-duration: .5s;
+  -o-animation-delay: 7.5s;
+  -o-animation-fill-mode: forwards;
+}
+
+@keyframes pig-pooping {
+  0% { transform: scale(.01) rotate(90deg) translateX(-16px)}
+  98% { transform: scale(.9) rotate(0deg) translateX(-30px) translateY(30px) }
+  99% { transform: scale(1) rotate(0deg) translateX(-30px) translateY(30px)}
+  100% { transform: scale(.9) rotate(0deg) translateX(-30px) translateY(30px)}
+}
+
+@-moz-keyframes pig-pooping {
+  0% { -moz-transform: scale(.01) rotate(90deg) translateX(-16px)}
+  98% { -moz-transform: scale(.9) rotate(0deg) translateX(-30px) translateY(30px) }
+    99% { -moz-transform: scale(1) rotate(0deg) translateX(-30px) translateY(30px)}
+  100% { -moz-transform: scale(.9) rotate(0deg) translateX(-30px) translateY(30px)}
+}
+
+@-webkit-keyframes pig-pooping {
+  0% { -webkit-transform: scale(.01) rotate(90deg) translateX(-16px)}
+  98% { -webkit-transform: scale(.9) rotate(0deg) translateX(-30px) translateY(30px) }
+  99% { -webkit-transform: scale(1) rotate(0deg) translateX(-30px) translateY(30px)}
+  100% { -webkit-transform: scale(.9) rotate(0deg) translateX(-30px) translateY(30px)}
+}
+
+@-o-keyframes pig-pooping {
+  0% { -o-transform: scale(.01) rotate(90deg) translateX(-16px)}
+  98% { -o-transform: scale(.9) rotate(0deg) translateX(-30px) translateY(30px) }
+  99% { -o-transform: scale(1) rotate(0deg) translateX(-30px) translateY(30px)}
+  100% { -o-transform: scale(.9) rotate(0deg) translateX(-30px) translateY(30px)}
+}
+
+.farm-pig-poop {
+  position: absolute;
+  display: block;
+  left: 430px;
+  bottom: 22px;
+  transform: scale(0);
+  -o-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+}
+
+.farm-welcome-banner {
+  opacity: 0;
+  position: absolute;
+  left: 50px;
+  z-index: 1;
+}
+
+.welcome-banner {
+  animation: welcome-banner ease 1s;
+  animation-duration: 1s;
+  animation-delay: 11.5s;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: welcome-banner ease 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 11.5s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: welcome-banner ease 1s;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 11.5s;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: welcome-banner ease 1s;
+  -o-animation-duration: 1s;
+  -o-animation-delay: 11.5s;
+  -o-animation-fill-mode: forwards;
+}
+
+@keyframes welcome-banner {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@-moz-keyframes welcome-banner {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@-webkit-keyframes welcome-banner {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@-o-keyframes welcome-banner {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.postcard {
+  border: dimgray;
+  border-width: 10px;
+  border-style: dashed;
+}
+
+.mat-grid-tile  {
+  position: inherit !important;
 }

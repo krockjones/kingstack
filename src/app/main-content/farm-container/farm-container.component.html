@@ -1,13 +1,22 @@
-  <mat-grid-list cols="1" rowHeight="512px">
-    <mat-grid-tile>
-      <mat-card class="farm-card">
-        <div class="farm-container">
-          <img class="farm-field" src="assets/img/field.jpg">
-       <img class="farm-barn" src="assets/img/red-barn.png">
-        <img class="farm-pig-start" src="assets/img/red-piggy.png">
-          <img class="farm-meat-stand-start" src="assets/img/meat-stand.png">
-          </div>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
-  <app-footer></app-footer>
+<mat-grid-list cols="1" rowHeight="512px">
+  <mat-grid-tile>
+    <br>
+    <mat-card class="farm-card postcard">
+      <div class="farm-container">
+        <img class="farm-field" src="../../../assets/farm-scene/field.jpg">
+        <img class="farm-barn" src="../../../assets/farm-scene/red-barn.png">
+        <img [class.pig-walking]="true" id="pig-start" class="farm-pig" src="../../../assets/farm-scene/red-piggy.png">
+        <img class="farm-meat-stand-start" src="../../../assets/farm-scene/meat-stand.png">
+        <img [class.fade-in]="true" class="farm-pig-dialog" src="../../../assets/farm-scene/dialog-box.png">
+        <img [class.pig-pooping]="true" class="farm-pig-poop" src="../../../assets/farm-scene/poop.png">
+        <img [class.welcome-banner]="true" class="farm-welcome-banner" src="../../../assets/farm-scene/farm-welcome.png">
+        <div id="pig-last-words-position" class="pig-last-words" [class.typewriter]="true">
+          <div>Oh...</div>
+        </div>
+      </div>
+    </mat-card>
+    <br>
+  </mat-grid-tile>
+</mat-grid-list>
+
+
