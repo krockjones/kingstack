@@ -1,0 +1,86 @@
+.avatar-place-holder {
+  background-image: url('../../../assets/avatars/pig-avatar.png');
+  background-size: cover;
+}
+
+.view-card {
+  width: 300px;
+  height: 200px;
+  transform: scale(.4);
+  -o-transform: scale(.4);
+  -moz-transform: scale(.4);
+  -webkit-transform: scale(.4);
+  margin-left: -35px;
+  margin-right: -35px;
+}
+
+
+.focus-view-card {
+  animation: focus-out 500ms forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: focus-out 500ms forwards;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: focus-out 500ms forwards;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: focus-out 500ms forwards;
+  -o-animation-fill-mode: forwards;
+}
+
+.focus-view-card:hover {
+  z-index: 10001;
+  animation: focus-in 500ms forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: focus-in 500ms forwards;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: focus-in 500ms forwards;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: focus-in 500ms forwards;
+  -o-animation-fill-mode: forwards;
+}
+
+@keyframes focus-in {
+  from {transform: scale(.4)}
+  to {transform: scale(1)}
+}
+
+@-webkit-keyframes focus-in {
+  from {transform: scale(.4)}
+  to {transform: scale(1)}
+}
+
+@-moz-keyframes focus-in {
+  from {transform: scale(.4)}
+  to {transform: scale(1)}
+}
+
+@-o-keyframes focus-in {
+  from {transform: scale(.4)}
+  to {transform: scale(1)}
+}
+
+@keyframes focus-out {
+  from {transform: scale(1)}
+  to {transform: scale(.4)}
+}
+
+@-webkit-keyframes focus-out {
+  from {transform: scale(1)}
+  to {transform: scale(.4)}
+}
+
+@-moz-keyframes focus-out {
+  from {transform: scale(1)}
+  to {transform: scale(.4)}
+}
+
+@-o-keyframes focus-out {
+  from {transform: scale(1)}
+  to {transform: scale(.4)}
+}
+
