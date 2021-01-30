@@ -12,4 +12,8 @@ export class ViewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showTopLine(bool): boolean{
+    return bool;
+  }
+
 }

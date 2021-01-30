@@ -10,12 +10,13 @@
   -o-transform: scale(.4);
   -moz-transform: scale(.4);
   -webkit-transform: scale(.4);
-  margin-left: -35px;
-  margin-right: -35px;
+  margin-left: -90px;
+  margin-right: -90px;
 }
 
 
 .focus-view-card {
+  z-index: 10001;
   animation: focus-out 500ms forwards;
   animation-fill-mode: forwards;
 
@@ -30,7 +31,7 @@
 }
 
 .focus-view-card:hover {
-  z-index: 10001;
+  z-index: 10002;
   animation: focus-in 500ms forwards;
   animation-fill-mode: forwards;
 
@@ -84,3 +85,10 @@
   to {transform: scale(.4)}
 }
 
+.vertical-line {
+    height: 75px;
+    width: 3px;
+    border-right-width: 3px;
+    border-right: dashed;
+    margin: -100px auto 0;
+}
