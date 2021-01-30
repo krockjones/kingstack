@@ -1,32 +1,36 @@
 <mat-grid-list cols="1" rowHeight="125px">
   <mat-grid-tile rowspan="2">
-  <app-view></app-view>
-  <app-view></app-view>
-  <app-view></app-view>
-  <app-view></app-view>
-  <app-view></app-view>
-  <app-view></app-view>
-  <app-view></app-view>
-  <app-view></app-view>
+    <app-view [lineageRow]="1" [displayLines]="['bottom-straight','bottom-right']"></app-view>
+    <app-view [lineageRow]="1" [displayLines]="['bottom-straight','bottom-left']"></app-view>
+    <app-view [lineageRow]="1" [displayLines]="['bottom-straight','bottom-right']"></app-view>
+    <app-view [lineageRow]="1" [displayLines]="['bottom-straight','bottom-left']"></app-view>
+    <app-view [lineageRow]="1" [displayLines]="['bottom-straight','bottom-right']"></app-view>
+    <app-view [lineageRow]="1" [displayLines]="['bottom-straight','bottom-left']"></app-view>
+    <app-view [lineageRow]="1" [displayLines]="['bottom-straight','bottom-right']"></app-view>
+    <app-view [lineageRow]="1" [displayLines]="['bottom-straight','bottom-left']"></app-view>
   </mat-grid-tile>
 </mat-grid-list>
 <mat-grid-list cols="1" rowHeight="125px">
   <mat-grid-tile rowspan="2">
-  <app-view></app-view>
-  <app-view></app-view>
-  <app-view></app-view>
-  <app-view></app-view>
+    <div class="lineage-breeding-pair">
+      <app-view class="row-two-flat-line lineage-row-two-outside-left" [lineageRow]="2" [displayLines]="['top-straight', 'bottom-straight','bottom-right']"></app-view>
+      <app-view class="row-two-flat-line  lineage-row-two-inside-left" [lineageRow]="2" [displayLines]="['top-straight', 'bottom-straight','bottom-left']"></app-view>
+    </div>
+    <div class="lineage-breeding-pair">
+      <app-view class="row-two-flat-line  lineage-row-two-inside-right" [lineageRow]="2" [displayLines]="['top-straight', 'bottom-straight','bottom-right']"></app-view>
+      <app-view class="row-two-flat-line  lineage-row-two-outside-right" [lineageRow]="2" [displayLines]="['top-straight', 'bottom-straight','bottom-left']"></app-view>
+    </div>
   </mat-grid-tile>
 </mat-grid-list>
 <mat-grid-list cols="1" rowHeight="125px">
   <mat-grid-tile rowspan="2">
-  <app-view></app-view>
-  <app-view></app-view>
+    <app-view [lineageRow]="3" [displayLines]="['top-straight', 'bottom-straight','bottom-right']"></app-view>
+    <app-view [lineageRow]="3" [displayLines]="['top-straight', 'bottom-straight','bottom-left']"></app-view>
   </mat-grid-tile>
 </mat-grid-list>
 <mat-grid-list cols="1" rowHeight="125px">
   <mat-grid-tile rowspan="2">
-  <app-view></app-view>
+    <app-view [lineageRow]="4" [displayLines]="['top-straight']"></app-view>
   </mat-grid-tile>
 </mat-grid-list>
 

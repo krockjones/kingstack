@@ -1,17 +1,20 @@
-<div style="width: 100%;">
-<mat-card class="view-card focus-view-card">
-  <mat-card-header>
-    <div mat-card-avatar class="avatar-place-holder"></div>
-  </mat-card-header>
-  <mat-card-content>
-    <div style="display: inline-flex">
-      <span><h4 style="margin: 0">Name:</h4> Kranky Karl</span>
-      <span><h4 style="margin: 0">DOB:</h4> 2017-01-08</span>
-      <span><h4 style="margin: 0">Reg #:</h4> 123455</span>
-    </div>
-  </mat-card-content>
-  <mat-card-actions>
-  </mat-card-actions>
-</mat-card>
-<div class="vertical-line"></div>
-</div>
+  <mat-card class="view-card focus-view-card">
+    <mat-card-header>
+      <div mat-card-avatar class="avatar-place-holder"></div>
+    </mat-card-header>
+    <mat-card-content>
+      <div style="display: inline-flex">
+        <span><h4 style="margin: 0">Name:</h4> Kranky Karl</span>
+        <span><h4 style="margin: 0">DOB:</h4> 2017-01-08</span>
+        <span><h4 style="margin: 0">Reg #:</h4> 123455</span>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+    </mat-card-actions>
+  </mat-card>
+  <div *ngIf="checkBuildList('bottom-straight')" class="bottom-vertical-line"></div>
+  <div *ngIf="checkBuildList('bottom-left')"  [class.row-two-flat-line-extension-left]="isRow(2)" class="bottom-flat-line-left"></div>
+  <div *ngIf="checkBuildList('bottom-right')" [class.row-two-flat-line-extension-right]="isRow(2)"  class="bottom-flat-line-right"></div>
+  <div *ngIf="checkBuildList('top-straight')" class="top-vertical-line"></div>
+  <div *ngIf="checkBuildList('top-left')" class="top-flat-line-left"></div>
+  <div *ngIf="checkBuildList('top-right')" class="top-flat-line-right"></div>
