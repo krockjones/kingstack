@@ -51,3 +51,9 @@ h1.app-name {
   margin: .3em .75em .2em;
   opacity: .5;
 }
+
+.mat-toolbar.mat-primary {
+  border-bottom: #fff;
+  border-bottom-style: outset;
+  border-bottom-width: 5px;
+}

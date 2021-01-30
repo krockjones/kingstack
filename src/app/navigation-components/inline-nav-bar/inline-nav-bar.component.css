@@ -1,7 +1,7 @@
 .fixed-nav-bottom {
     position: fixed;
     bottom: 7px;
-    width: 80%;
+    width: 100%;
     opacity: .5;
     background-color: white;
     text-align: center;

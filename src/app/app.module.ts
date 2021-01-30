@@ -19,6 +19,10 @@ import { InlineNavBarComponent } from './navigation-components/inline-nav-bar/in
 import { MeetTheFarmComponent } from './meet-the-farm/meet-the-farm.component';
 import { FarmContainerComponent } from './meet-the-farm/farm-container/farm-container.component';
 import { AboutUsComponent } from './meet-the-farm/about-us/about-us.component';
+import { LineageContainerComponent } from './lineage-viewer/lineage-container/lineage-container.component';
+import { ViewComponent } from './lineage-viewer/view/view.component';
+import { LineageViewerComponent } from './lineage-viewer/lineage-viewer.component';
+import {MainRoutingModule} from './resources/modules/main/main-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,11 +32,16 @@ import { AboutUsComponent } from './meet-the-farm/about-us/about-us.component';
     FooterComponent,
     FarmContainerComponent,
     InlineNavBarComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    LineageContainerComponent,
+    ViewComponent,
+    LineageViewerComponent
   ],
   imports: [
+    MainRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
+    MaterialsModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
@@ -41,8 +50,7 @@ import { AboutUsComponent } from './meet-the-farm/about-us/about-us.component';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule,
-    MaterialsModule
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

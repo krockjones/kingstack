@@ -1,0 +1,8 @@
+.mat-grid-tile {
+  background: lightblue;
+}
+.bottom {
+  border-bottom: dashed;
+  border-bottom-width: 3px;
+  border-bottom-color: black;
+}

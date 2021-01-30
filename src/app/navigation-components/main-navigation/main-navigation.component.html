@@ -14,18 +14,17 @@
     <mat-sidenav opened="true" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list>
-        <a mat-list-item routerLink="." ><span class="material-icons nav-icon">account_box</span>Account Management</a>
+        <a mat-list-item routerLink="#" ><span class="material-icons nav-icon">account_box</span>Account Management</a>
         <hr class="side-nav-line-break">
-        <a mat-list-item routerLink="." ><span class="material-icons nav-icon">savings</span>Welcome To The Farm</a>
-        <a mat-list-item routerLink="." ><span class="material-icons nav-icon">food_bank</span>Services & Pricing</a>
-        <a mat-list-item routerLink="." ><span class="material-icons nav-icon">search</span>Lineage Viewer</a>
-        <a mat-list-item routerLink="." ><span class="material-icons nav-icon">photo</span>Photo Gallery</a>
+        <a mat-list-item routerLink="/the-farm" ><span class="material-icons nav-icon">savings</span>Welcome To The Farm</a>
+        <a mat-list-item routerLink="#" ><span class="material-icons nav-icon">food_bank</span>Services & Pricing</a>
+        <a mat-list-item routerLink="/lineage-viewer" ><span class="material-icons nav-icon">search</span>Lineage Viewer</a>
+        <a mat-list-item routerLink="#" ><span class="material-icons nav-icon">photo</span>Photo Gallery</a>
       </mat-nav-list>
       <app-footer></app-footer>
     </mat-sidenav>
-
     <mat-sidenav-content>
-      <app-meet-the-farmt></app-meet-the-farmt>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
