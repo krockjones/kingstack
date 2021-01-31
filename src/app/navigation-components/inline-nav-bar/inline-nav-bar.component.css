@@ -1,13 +1,18 @@
 .fixed-nav-bottom {
+  background-color: whitesmoke;
+  overflow: hidden;
   position: fixed;
-  bottom: 7px;
+  bottom: 0px;
   width: 100%;
-  background-color: white;
-  text-align: center;
+  min-height: 50px;
+  max-height: 200px;
 }
 
 .fixed-nav-container {
-
+  position: relative;
+  height: 100%;
+  right: 0;
+  margin: 5px 0px 5px 25px;
 }
 
 .inline-nav-button:hover {
@@ -60,7 +65,7 @@
 
 .inline-nav-button {
   opacity: .5;
-  width: 190px;
+  min-width: 190px;
   height: 40px;
   margin: 3px 10px 3px;
 }
