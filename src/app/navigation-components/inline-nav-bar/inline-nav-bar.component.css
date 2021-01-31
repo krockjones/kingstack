@@ -1,19 +1,16 @@
 .fixed-nav-bottom {
-    position: fixed;
-    bottom: 7px;
-    width: 100%;
-    opacity: .5;
-    background-color: white;
-    text-align: center;
+  position: fixed;
+  bottom: 7px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
 }
 
 .fixed-nav-container {
-  position: relative;
-  margin: 0 auto;
-  padding-bottom: 7px;
+
 }
 
-.fixed-nav-bottom:hover {
+.inline-nav-button:hover {
   animation: transition 500ms forwards;
 
   -webkit-animation: transition 500ms forwards;
@@ -22,23 +19,39 @@
 }
 
 @keyframes transition {
-  from {opacity: .5;}
-  to {opacity: 1;}
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes transition {
-   from {opacity: .5;}
-  to {opacity: 1;}
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes transition {
-   from {opacity: .5;}
-  to {opacity: 1;}
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes transition {
-   from {opacity: .5;}
-  to {opacity: 1;}
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .inline-nav-icon {
@@ -46,8 +59,9 @@
 }
 
 .inline-nav-button {
-    width: 190px;
-    height: 40px;
-    margin: 3px 10px 3px;
+  opacity: .5;
+  width: 190px;
+  height: 40px;
+  margin: 3px 10px 3px;
 }
 
