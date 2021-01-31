@@ -17,7 +17,17 @@ export class ViewComponent implements OnInit {
     'bottom-right': false,
     'top-straight': false,
     'top-left': false,
-    'top-right': false
+    'top-right': false,
+    'top-straight-ii': false,
+    'top-straight-iii': false,
+    'top-straight-iv': false,
+    'top-straight-v': false,
+    'top-straight-vi': false,
+    'top-straight-vii': false,
+    'bottom-right-long': false,
+    'bottom-right-short': false,
+    'bottom-left-short-ii': false,
+    'bottom-right-short-ii': false
   };
 
   private LINE_DIRECTION = {
@@ -27,6 +37,18 @@ export class ViewComponent implements OnInit {
     3: 'top-straight',
     4: 'top-left',
     5: 'top-right',
+    6: 'top-straight-ii',
+    7: 'top-straight-iii',
+    8: 'top-straight-iv',
+    9: 'top-straight-v',
+    10: 'top-straight-vi',
+    11: 'top-straight-vii',
+    12: 'bottom-right-long',
+    13: 'bottom-right-short',
+    14: 'bottom-left-long',
+    15: 'bottom-left-short',
+    16: 'bottom-left-short-ii',
+    17: 'bottom-right-short-ii'
   };
 
   private mapLineDirectionDict(): any[] {

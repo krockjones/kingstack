@@ -13,8 +13,25 @@
     </mat-card-actions>
   </mat-card>
   <div *ngIf="checkBuildList('bottom-straight')" class="bottom-vertical-line"></div>
-  <div *ngIf="checkBuildList('bottom-left')"  [class.row-two-flat-line-extension-left]="isRow(2)" class="bottom-flat-line-left"></div>
-  <div *ngIf="checkBuildList('bottom-right')" [class.row-two-flat-line-extension-right]="isRow(2)"  class="bottom-flat-line-right"></div>
-  <div *ngIf="checkBuildList('top-straight')" class="top-vertical-line"></div>
+  <div *ngIf="checkBuildList('bottom-left')" class="bottom-flat-line-left"></div>
+  <div *ngIf="checkBuildList('bottom-right')" class="bottom-flat-line-right"></div>
+  <div *ngIf="checkBuildList('top-straight')" [class.row-four-top-vertical-line-extended]="isRow(4)" class="top-vertical-line"></div>
   <div *ngIf="checkBuildList('top-left')" class="top-flat-line-left"></div>
   <div *ngIf="checkBuildList('top-right')" class="top-flat-line-right"></div>
+
+  <div *ngIf="checkBuildList('top-straight-ii')" class="top-vertical-line-two"></div>
+  <div *ngIf="checkBuildList('top-straight-iii')" class="top-vertical-line-three"></div>
+  <div *ngIf="checkBuildList('top-straight-iv')" class="top-vertical-line-four"></div>
+  <div *ngIf="checkBuildList('top-straight-v')" class="top-vertical-line-five"></div>
+  <div *ngIf="checkBuildList('top-straight-vi')" class="top-vertical-line-six"></div>
+  <div *ngIf="checkBuildList('top-straight-vii')" class="top-vertical-line-seven"></div>
+
+  <div *ngIf="checkBuildList('bottom-left-long')" class="bottom-flat-line-left-long"></div>
+  <div *ngIf="checkBuildList('bottom-left-short')" class="bottom-flat-line-left-short"></div>
+
+  <div *ngIf="checkBuildList('bottom-right-long')" class="bottom-flat-line-right-long"></div>
+  <div *ngIf="checkBuildList('bottom-right-short')" class="bottom-flat-line-right-short"></div>
+
+  <div *ngIf="checkBuildList('bottom-left-short-ii')" class="bottom-flat-line-left-short-ii"></div>
+  <div *ngIf="checkBuildList('bottom-right-short-ii')" class="bottom-flat-line-right-short-ii"></div>
+
