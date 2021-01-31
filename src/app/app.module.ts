@@ -23,6 +23,8 @@ import { LineageContainerComponent } from './lineage-viewer/lineage-container/li
 import { ViewComponent } from './lineage-viewer/view/view.component';
 import { LineageViewerComponent } from './lineage-viewer/lineage-viewer.component';
 import {MainRoutingModule} from './resources/modules/main/main-routing.module';
+import { LineageSearchComponent } from './lineage-viewer/lineage-search/lineage-search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import {MainRoutingModule} from './resources/modules/main/main-routing.module';
     AboutUsComponent,
     LineageContainerComponent,
     ViewComponent,
-    LineageViewerComponent
+    LineageViewerComponent,
+    LineageSearchComponent
   ],
   imports: [
     MainRoutingModule,
@@ -50,7 +53,8 @@ import {MainRoutingModule} from './resources/modules/main/main-routing.module';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

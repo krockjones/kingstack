@@ -1,0 +1,9 @@
+.lineage-search-nav {
+  width: 100%;
+  text-align: center;
+  transform: translate(10px, 10px);
+}
+
+.lineage-search-nav-drop-down {
+  margin: 0 14px 0 0;
+}
