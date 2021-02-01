@@ -148,5 +148,29 @@
       bottom: -150px;
     }
   }
+  @-moz-keyframes slide-down {
+    from {
+      bottom: 0;
+    }
+    to {
+      bottom: -150px;
+    }
+  }
+  @-webkit-keyframes slide-down {
+    from {
+      bottom: 0;
+    }
+    to {
+      bottom: -150px;
+    }
+  }
+  @-o-keyframes slide-down {
+    from {
+      bottom: 0;
+    }
+    to {
+      bottom: -150px;
+    }
+  }
 }
 

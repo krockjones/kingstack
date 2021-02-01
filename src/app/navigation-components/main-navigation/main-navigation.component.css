@@ -3,7 +3,7 @@
   flex-direction: column;
   position: absolute;
   top: 0;
-  bottom: 0;
+  margin-top: 15px;
   left: 0;
   right: 0;
 }
@@ -84,6 +84,19 @@ h1.app-name {
 }
 
 @media only screen and (max-width: 1080px) {
+  #side-nav-line-break-first {
+    animation: slideUp 500ms forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: slideUp 500ms forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: slideUp 500ms forwards;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: slideUp 500ms forwards;
+    -o-animation-fill-mode: forwards;
+}
   .app-name {
     animation: fadeIn 500ms forwards;
     animation-delay: 450ms;
@@ -118,6 +131,19 @@ h1.app-name {
 }
 
 @media only screen and (min-width: 1080px) {
+  #side-nav-line-break-first {
+    animation: slideDown 500ms forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: slideDown 500ms forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: slideDown 500ms forwards;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: slideDown 500ms forwards;
+    -o-animation-fill-mode: forwards;
+}
   .app-name {
     animation: fadeOut 500ms forwards;
     animation-fill-mode: forwards;
@@ -150,3 +176,83 @@ h1.app-name {
     -o-animation-fill-mode: forwards;
   }
 }
+
+@media only screen and (max-width: 599px) {
+  .mat-nav-list {
+    margin-top: 39px;
+  }
+}
+
+
+@keyframes slideDown {
+    from {
+      margin-top: 0px;
+    }
+    to {
+      margin-top: 67px;
+    }
+  }
+  @-moz-keyframes slideDown {
+    from {
+      margin-top: 0px;
+    }
+    to {
+      margin-top: 67px;
+    }
+  }
+  @-webkit-keyframes slideDown {
+    from {
+      margin-top: 0px;
+    }
+    to {
+      margin-top: 67px;
+    }
+  }
+  @-o-keyframes slideDown {
+    from {
+      margin-top: 0px;
+    }
+    to {
+      margin-top: 67px;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      margin-top: 67px;
+    }
+    to {
+      margin-top: 0px;
+      padding-top: 4px;
+    }
+  }
+
+@-webkit-keyframes slideUp {
+    from {
+      margin-top: 67px;
+    }
+    to {
+      margin-top: 0px;
+      padding-top: 4px;
+    }
+  }
+
+@-o-keyframes slideUp {
+    from {
+      margin-top: 67px;
+    }
+    to {
+      margin-top: 0px;
+      padding-top: 4px;
+    }
+  }
+
+@-moz-keyframes slideUp {
+    from {
+      margin-top: 67px;
+    }
+    to {
+      margin-top: 0px;
+      padding-top: 4px;
+    }
+  }
