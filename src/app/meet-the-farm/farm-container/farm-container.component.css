@@ -370,22 +370,22 @@
 .welcome-banner {
   animation: welcome-banner ease 1s;
   animation-duration: 1s;
-  animation-delay: 11.5s;
+  animation-delay: 9.75s;
   animation-fill-mode: forwards;
 
   -webkit-animation: welcome-banner ease 1s;
   -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 11.5s;
+  -webkit-animation-delay: 9.75s;
   -webkit-animation-fill-mode: forwards;
 
   -moz-animation: welcome-banner ease 1s;
   -moz-animation-duration: 1s;
-  -moz-animation-delay: 11.5s;
+  -moz-animation-delay: 9.75s;
   -moz-animation-fill-mode: forwards;
 
   -o-animation: welcome-banner ease 1s;
   -o-animation-duration: 1s;
-  -o-animation-delay: 11.5s;
+  -o-animation-delay: 9.75s;
   -o-animation-fill-mode: forwards;
 }
 
@@ -422,4 +422,295 @@
   bottom: -7px;
   height: 300px;
   width: auto;
+}
+
+#farm-container {
+
+}
+
+.scale-animation {
+animation: scale-animation ease;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: scale-animation ease;
+    -webkit-animation-duration: 500ms;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: scale-animation ease;
+    -moz-animation-duration: 500ms;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: scale-animation ease;
+    -o-animation-duration: 500ms;
+    -o-animation-fill-mode: forwards;
+  }
+
+  @keyframes scale-animation {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+  }
+
+  @-moz-keyframes scale-animation {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+  }
+
+  @-webkit-keyframes scale-animation {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+  }
+
+  @-o-keyframes scale-animation {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+  }
+
+@media only screen and (max-width: 1114px) {
+  .scale-animation {
+    animation: scale-animation ease;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: scale-animation ease;
+    -webkit-animation-duration: 200ms;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: scale-animation ease;
+    -moz-animation-duration: 200ms;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: scale-animation ease;
+    -o-animation-duration: 200ms;
+    -o-animation-fill-mode: forwards;
+  }
+
+  @keyframes scale-animation {
+    from {
+      transform: scale(1)
+    }
+    to {
+      transform: scale(.75)
+    }
+  }
+
+  @-moz-keyframes scale-animation {
+    from {
+      transform: scale(1)
+    }
+    to {
+      transform: scale(.75)
+    }
+  }
+
+  @-webkit-keyframes scale-animation {
+    from {
+      transform: scale(1)
+    }
+    to {
+      transform: scale(.75)
+    }
+  }
+
+  @-o-keyframes scale-animation {
+    from {
+      transform: scale(1)
+    }
+    to {
+      transform: scale(.75)
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .scale-animation {
+    height: 530px !important;;
+
+    animation: scale-animation ease;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: scale-animation ease;
+    -webkit-animation-duration: 200ms;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: scale-animation ease;
+    -moz-animation-duration: 200ms;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: scale-animation ease;
+    -o-animation-duration: 200ms;
+    -o-animation-fill-mode: forwards;
+  }
+
+  @keyframes scale-animation {
+    from {
+      transform: scale(.75)
+    }
+    to {
+      transform: scale(.5)
+    }
+  }
+
+  @-moz-keyframes scale-animation {
+    from {
+      transform: scale(.75)
+    }
+    to {
+      transform: scale(.5)
+    }
+  }
+
+  @-webkit-keyframes scale-animation {
+    from {
+      transform: scale(.75)
+    }
+    to {
+      transform: scale(.5)
+    }
+  }
+
+  @-o-keyframes scale-animation {
+    from {
+      transform: scale(.75)
+    }
+    to {
+      transform: scale(.5)
+    }
+  }
+}
+
+
+@media only screen and (max-width: 530px) {
+  .scale-animation {
+    height: 530px !important;
+
+    animation: scale-animation ease;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: scale-animation ease;
+    -webkit-animation-duration: 200ms;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: scale-animation ease;
+    -moz-animation-duration: 200ms;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: scale-animation ease;
+    -o-animation-duration: 200ms;
+    -o-animation-fill-mode: forwards;
+  }
+
+  @keyframes scale-animation {
+    from {
+      transform: scale(.5)
+    }
+    to {
+      transform: scale(.4)
+    }
+  }
+
+  @-moz-keyframes scale-animation {
+    from {
+      transform: scale(.5)
+    }
+    to {
+      transform: scale(.4)
+    }
+  }
+
+  @-webkit-keyframes scale-animation {
+    from {
+      transform: scale(.5)
+    }
+    to {
+      transform: scale(.4)
+    }
+  }
+
+  @-o-keyframes scale-animation {
+    from {
+      transform: scale(.5)
+    }
+    to {
+      transform: scale(.4)
+    }
+  }
+}
+
+
+@media only screen and (max-width: 430px) {
+  .scale-animation {
+    height: 530px !important;
+
+    animation: scale-animation ease;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: scale-animation ease;
+    -webkit-animation-duration: 200ms;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: scale-animation ease;
+    -moz-animation-duration: 200ms;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: scale-animation ease;
+    -o-animation-duration: 200ms;
+    -o-animation-fill-mode: forwards;
+  }
+
+  @keyframes scale-animation {
+    from {
+      transform: scale(.4)
+    }
+    to {
+      transform: scale(.3)
+    }
+  }
+
+  @-moz-keyframes scale-animation {
+    from {
+      transform: scale(.4)
+    }
+    to {
+      transform: scale(.3)
+    }
+  }
+
+  @-webkit-keyframes scale-animation {
+    from {
+      transform: scale(.4)
+    }
+    to {
+      transform: scale(.3)
+    }
+  }
+
+  @-o-keyframes scale-animation {
+    from {
+      transform: scale(.4)
+    }
+    to {
+      transform: scale(.3)
+    }
+  }
 }
