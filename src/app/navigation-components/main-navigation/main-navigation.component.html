@@ -2,6 +2,7 @@
   <mat-toolbar color="primary" class="toolbar" style="width: 100%">
     <button mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon></button>
+    <img class="main-nav-logo" src="../../../assets/nav/medium-logo.png">
     <h1 class="app-name">{{getSiteName()}}</h1>
     <div class="nav-icons">
       <span class="material-icons nav-icon">account_circle</span>
@@ -14,6 +15,7 @@
     <mat-sidenav opened="true" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list>
+        <hr class="side-nav-line-break" id="side-nav-line-break-first">
         <a mat-list-item routerLink="#" ><span class="material-icons nav-icon">account_box</span>Account Management</a>
         <hr class="side-nav-line-break">
         <a mat-list-item routerLink="/the-farm" ><span class="material-icons nav-icon">savings</span>Welcome To The Farm</a>
@@ -25,7 +27,6 @@
     </mat-sidenav>
     <mat-sidenav-content>
       <router-outlet></router-outlet>
-      <app-inline-nav-bar></app-inline-nav-bar>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

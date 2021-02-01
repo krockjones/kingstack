@@ -37,9 +37,10 @@ h1.app-name {
   margin: 0 .5em 0 0;
 }
 
-.mat-list-item:first-child {
-  margin-top: .25em;
+#side-nav-line-break-first {
+  margin-top: 67px;
 }
+
 .nav-icon {
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
@@ -56,4 +57,96 @@ h1.app-name {
   border-bottom: #fff;
   border-bottom-style: outset;
   border-bottom-width: 5px;
+
+  border-top: #fff;
+  border-top-style: outset;
+  border-top-width: 5px;
+}
+
+.main-nav-logo {
+  z-index: 2;
+  margin-left: 10px;
+  position: relative;
+  bottom: -10px;
+  width: 230px;
+  height: auto;
+  opacity: 0;
+}
+
+.mat-toolbar-single-row {
+  height: 80px;
+}
+
+.app-name {
+  position: absolute;
+  left: 100px;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1080px) {
+  .app-name {
+    animation: fadeIn 500ms forwards;
+    animation-delay: 450ms;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: fadeIn 500ms forwards;
+    -webkit-animation-delay: 450ms;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: fadeIn 500ms forwards;
+    -moz-animation-delay: 450ms;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: fadeIn 500ms forwards;
+    -o-animation-delay: 450ms;
+    -o-animation-fill-mode: forwards;
+  }
+
+  .main-nav-logo {
+    animation: fadeOut90 500ms forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: fadeOut90 500ms forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: fadeOut90 500ms forwards;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: fadeOut90 500ms forwards;
+    -o-animation-fill-mode: forwards;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .app-name {
+    animation: fadeOut 500ms forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: fadeOut 500ms forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: fadeOut 500ms forwards;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: fadeOut 500ms forwards;
+    -o-animation-fill-mode: forwards;
+  }
+
+  .main-nav-logo {
+    animation: fadeIn90 500ms forwards;
+    animation-delay: 450ms;
+    animation-fill-mode: forwards;
+
+    -webkit-animation: fadeIn90 500ms forwards;
+    -webkit-animation-delay: 450ms;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation: fadeIn90 500ms forwards;
+    -moz-animation-delay: 450ms;
+    -moz-animation-fill-mode: forwards;
+
+    -o-animation: fadeIn90 500ms forwards;
+        -o-animation-delay: 450ms;
+    -o-animation-fill-mode: forwards;
+  }
 }
