@@ -331,3 +331,39 @@
   top: -47px;
   margin: 47px 0px 0px 75px;
 }
+
+
+@media only screen and (max-width: 1080px) {
+  .view-card {
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+
+    margin: 7px auto;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  .focus-view-card:hover {
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+  }
+
+  .focus-view-card {
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+
+    margin: 0 auto;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}

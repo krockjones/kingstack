@@ -1,13 +1,17 @@
 import {Component, OnInit} from '@angular/core';
 
-interface Food {
-  value: string;
-  viewValue: string;
+interface Boars {
+  id: number;
+  name: string;
+  dob: string;
+  status: boolean;
 }
 
-interface Car {
-  value: string;
-  viewValue: string;
+interface Sows {
+  id: number;
+  name: string;
+  dob: string;
+  status: boolean;
 }
 
 @Component({
@@ -17,19 +21,18 @@ interface Car {
 })
 export class LineageSearchComponent implements OnInit {
 
-  selectedValue: string;
-  selectedCar: string;
+  selectedBoar: string;
+  selectedSow: string;
 
-  foods: Food[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
+  boars: Boars[] = [
+    {id: 1, name: 'Six-Two', dob: '2017-01-01', status: true},
+    {id: 2, name: 'Turnip', dob: '2020-11-01', status: true},
+    {id: 3, name: 'Brutus', dob: '2020-11-01', status: true}
   ];
 
-  cars: Car[] = [
-    {value: 'volvo', viewValue: 'Volvo'},
-    {value: 'saab', viewValue: 'Saab'},
-    {value: 'mercedes', viewValue: 'Mercedes'}
+  sows: Sows[] = [
+    {id: 1, name: 'Clarebelle', dob: '2017-01-01', status: true},
+    {id: 2, name: 'Porter', dob: '2020-05-01', status: true}
   ];
 
   constructor() {

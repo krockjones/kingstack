@@ -1,22 +1,26 @@
-<mat-grid-list cols="1" rowHeight="75px">
-  <mat-grid-tile>
-    <form class="lineage-search-nav">
-      <mat-form-field appearance="fill" class="lineage-search-nav-drop-down">
-        <mat-label>Current Boars</mat-label>
-        <mat-select [(ngModel)]="selectedValue" name="food">
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field appearance="fill" class="lineage-search-nav-drop-down">
-        <mat-label>Current Sows</mat-label>
-        <mat-select [(ngModel)]="selectedValue" name="food">
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-    </form>
-  </mat-grid-tile>
-</mat-grid-list>
+  <form class="lineage-search-nav">
+
+    <mat-form-field appearance="fill" class="lineage-search-nav-drop-down">
+      <mat-label>Current Boars</mat-label>
+      <mat-select [(ngModel)]="selectedBoar" name="boar">
+        <mat-option *ngFor="let boar of boars" [value]="boar.name">
+          {{boar.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="lineage-search-nav-drop-down">
+      <mat-label>Current Sows</mat-label>
+      <mat-select [(ngModel)]="selectedSow" name="sow">
+        <mat-option *ngFor="let sow of sows" [value]="sow.name">
+          {{sow.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="lineage-search-nav-drop-down">
+      <mat-label>RWHA Registration #</mat-label>
+      <input type="number" min="0" matInput placeholder="Registration #">
+    </mat-form-field>
+      <button class="lineage-search-button" mat-raised-button color="accent">Calculate COI</button>
+  </form>

@@ -54,7 +54,8 @@ import { FormsModule } from '@angular/forms';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

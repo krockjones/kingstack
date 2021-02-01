@@ -6,3 +6,20 @@
   display: contents;
 }
 
+.lineage-block-list {
+  display: none;
+}
+
+.lineage-traditional-list {
+}
+
+
+@media only screen and (max-width: 1080px) {
+  .lineage-block-list {
+    display: block;
+  }
+
+  .lineage-traditional-list {
+    display: none;
+  }
+}
