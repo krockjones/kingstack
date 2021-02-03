@@ -25,6 +25,9 @@ import { LineageViewerComponent } from './lineage-viewer/lineage-viewer.componen
 import {MainRoutingModule} from './resources/modules/main/main-routing.module';
 import { LineageSearchComponent } from './lineage-viewer/lineage-search/lineage-search.component';
 import { FormsModule } from '@angular/forms';
+import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
+import { AccountManagementComponent } from './account-management/account-management.component';
+import { StoreWindowComponent } from './store-window/store-window.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { FormsModule } from '@angular/forms';
     LineageContainerComponent,
     ViewComponent,
     LineageViewerComponent,
-    LineageSearchComponent
+    LineageSearchComponent,
+    PhotoGalleryComponent,
+    AccountManagementComponent,
+    StoreWindowComponent
   ],
   imports: [
     MainRoutingModule,
