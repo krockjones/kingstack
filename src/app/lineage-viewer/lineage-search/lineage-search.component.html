@@ -1,26 +1,41 @@
-  <form class="lineage-search-nav">
+<form class="lineage-search-nav">
 
-    <mat-form-field appearance="fill" class="lineage-search-nav-drop-down">
-      <mat-label>Current Boars</mat-label>
-      <mat-select [(ngModel)]="selectedBoar" name="boar">
-        <mat-option *ngFor="let boar of boars" [value]="boar.name">
-          {{boar.name}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
+  <mat-form-field appearance="fill" class="lineage-search-nav-drop-down">
+    <mat-label>Hog Breeds</mat-label>
+    <mat-select [(ngModel)]="selectedBreed" name="breed">
+      <mat-option *ngFor="let breed of breeds" [value]="breed.type">
+        {{breed.type}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 
-    <mat-form-field appearance="fill" class="lineage-search-nav-drop-down">
-      <mat-label>Current Sows</mat-label>
-      <mat-select [(ngModel)]="selectedSow" name="sow">
-        <mat-option *ngFor="let sow of sows" [value]="sow.name">
-          {{sow.name}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
+  <mat-form-field appearance="fill" class="lineage-search-nav-drop-down">
+    <mat-label>Current Boars</mat-label>
+    <mat-select [(ngModel)]="selectedBoar" name="boar" [disabled]="isBreedSelected()">
+      <mat-option *ngFor="let boar of boars" [value]="boar.name">
+        {{boar.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 
+  <mat-form-field appearance="fill" class="lineage-search-nav-drop-down">
+    <mat-label>Current Sows</mat-label>
+    <mat-select [(ngModel)]="selectedSow" name="sow"
+                [disabled]="isBreedSelected()">
+      <mat-option *ngFor="let sow of sows" [value]="sow.name">
+        {{sow.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div style="display:none;">
     <mat-form-field appearance="fill" class="lineage-search-nav-drop-down">
-      <mat-label>RWHA Registration #</mat-label>
-      <input type="number" min="0" matInput placeholder="Registration #">
+      <mat-label>{{whatPrefix()}} Registration #</mat-label>
+      <input [(ngModel)]="queryRegNumber" type="number" min="0" matInput placeholder="Registration #"
+             [disabled]="isBreedSelected() || !isBreedSelected() && !isSowSelected()">
     </mat-form-field>
-      <button class="lineage-search-button" mat-raised-button color="accent">Calculate COI</button>
-  </form>
+    <button [disabled]="isBreedSelected() || !isBreedSelected() && !isRegNumEntered()" class="lineage-search-button"
+            mat-raised-button color="accent">Calculate COI
+    </button>
+  </div>
+</form>

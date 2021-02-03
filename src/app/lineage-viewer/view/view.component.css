@@ -360,7 +360,7 @@
     -moz-animation: none;
     -o-animation: none;
 
-    margin: 0 auto;
+    margin: 0 auto 7px;
     transform: scale(1);
     -webkit-transform: scale(1);
     -o-transform: scale(1);

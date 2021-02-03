@@ -14,6 +14,10 @@ interface Sows {
   status: boolean;
 }
 
+interface Breeds {
+  type: string;
+}
+
 @Component({
   selector: 'app-lineage-search',
   templateUrl: './lineage-search.component.html',
@@ -21,8 +25,15 @@ interface Sows {
 })
 export class LineageSearchComponent implements OnInit {
 
-  selectedBoar: string;
-  selectedSow: string;
+  selectedBoar: string = undefined;
+  selectedSow: string = undefined;
+  selectedBreed: string = undefined;
+  queryRegNumber: number = undefined;
+
+  breeds: Breeds[] = [
+    {type: 'Guinea Hog'},
+    {type: 'Red Wattle'}
+    ];
 
   boars: Boars[] = [
     {id: 1, name: 'Six-Two', dob: '2017-01-01', status: true},
@@ -39,5 +50,25 @@ export class LineageSearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  whatPrefix(): string {
+    return (this.selectedBreed !== undefined) ? (this.selectedBreed === 'Red Wattle') ? 'RW' : 'GH' : '';
+  }
+
+  isBreedSelected(): boolean {
+    return !(this.selectedBreed !== undefined && typeof this.selectedBreed === 'string');
+  }
+
+  isSowSelected(): boolean {
+    return (this.selectedSow !== undefined && typeof this.selectedSow === 'string');
+  }
+
+  isBoarSelected(): boolean {
+    return (this.selectedBoar !== undefined && typeof this.selectedBoar === 'string');
+  }
+
+  isRegNumEntered(): boolean {
+    return (this.queryRegNumber !== undefined && typeof this.queryRegNumber === 'number');
   }
 }
