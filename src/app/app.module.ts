@@ -28,6 +28,9 @@ import { FormsModule } from '@angular/forms';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { AccountManagementComponent } from './account-management/account-management.component';
 import { StoreWindowComponent } from './store-window/store-window.component';
+import { GalleryComponent } from './photo-gallery/gallery/gallery.component';
+import { SandboxRedirectComponent } from './resources/components/sandbox-redirect/sandbox-redirect.component';
+import { ImageComponent } from './photo-gallery/gallery/image/image.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import { StoreWindowComponent } from './store-window/store-window.component';
     LineageSearchComponent,
     PhotoGalleryComponent,
     AccountManagementComponent,
-    StoreWindowComponent
+    StoreWindowComponent,
+    GalleryComponent,
+    SandboxRedirectComponent,
+    ImageComponent
   ],
   imports: [
     MainRoutingModule,
