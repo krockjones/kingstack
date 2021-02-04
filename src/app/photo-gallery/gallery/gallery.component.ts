@@ -1,6 +1,11 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
 import {MDCTextField} from '@material/textfield';
 
+
+interface Image  {
+  src: string;
+  label: string;
+}
 
 @Component({
   selector: 'app-gallery',
@@ -9,6 +14,8 @@ import {MDCTextField} from '@material/textfield';
 })
 
 export class GalleryComponent implements OnInit, AfterViewInit {
+  @Input() galleryName: string;
+  @Input() galleryImages: Array<Image>;
 
   textField: MDCTextField;
   constructor() { }
