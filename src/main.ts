@@ -8,10 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
-const SITE_NAME = 'KingStack Farm';
-
-
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
-export {SITE_NAME};

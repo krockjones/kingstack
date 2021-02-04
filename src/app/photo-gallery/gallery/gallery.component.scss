@@ -1,0 +1,68 @@
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+@use "@material/image-list/mdc-image-list";
+@use "@material/image-list";
+@import "material-components-web/material-components-web";
+
+
+@include textfield.core-styles;
+
+.my-image-list {
+  @include image-list.standard-columns(4);
+}
+
+.mdc-image-list__supporting {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+}
+
+.mdc-image-list__label {
+  font-family: Roboto, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  letter-spacing: .009375em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.image-list-item {
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.image-list-item__caption {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: transparentize($color: #000000, $amount: 0.50);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  padding: 5px;
+
+  transition: all 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-list-item:hover .image-list-item__caption {
+  visibility: visible;
+  opacity: 1;
+}

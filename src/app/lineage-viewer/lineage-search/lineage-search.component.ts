@@ -21,7 +21,7 @@ interface Breeds {
 @Component({
   selector: 'app-lineage-search',
   templateUrl: './lineage-search.component.html',
-  styleUrls: ['./lineage-search.component.css']
+  styleUrls: ['./lineage-search.component.scss']
 })
 export class LineageSearchComponent implements OnInit {
 
