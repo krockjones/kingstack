@@ -8,7 +8,7 @@
 /bazel-out
 
 # dependencies
-/node_modules
+# /node_modules to inlcuude for stackblitz
 
 # profiling files
 chrome-profiler-events*.json

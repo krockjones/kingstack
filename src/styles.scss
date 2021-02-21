@@ -4,7 +4,7 @@
 @use "@material/textfield";
 @use "@material/image-list/mdc-image-list";
 @use "@material/image-list";
-@import "material-components-web/material-components-web";
+@use "material-components-web/material-components-web";
 
 @include textfield.core-styles;
 
