@@ -10,17 +10,35 @@
 @include textfield.core-styles;
 
 .my-image-list {
-  @include image-list.standard-columns(4);
+  @include image-list.standard-columns(6);
 }
 
-.mdc-image-list__supporting {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 48px;
-    padding: 0 16px;
-    background: rgba(0,0,0,.6);
-    color: #fff;
+@media only screen and (max-width: 1280px) {
+  .my-image-list {
+  @include image-list.standard-columns(4);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .my-image-list {
+  @include image-list.standard-columns(3);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .my-image-list {
+    @include image-list.standard-columns(2);
+  }
+}
+
+@media only screen and (max-width: 599px) {
+.my-image-list {
+@include image-list.standard-columns(1);
+}
+}
+
+.mdc-image-list__item {
+  overflow: hidden;
+  margin: 7px;
 }
 
 .mdc-image-list__label {
@@ -43,26 +61,143 @@
   cursor: pointer;
   position: relative;
   box-sizing: border-box;
+  opacity: .9;
+  overflow: hidden;
 }
 
-.image-list-item__caption {
-  white-space: nowrap;
+.mdc-image-list__item:hover .mdc-image-list__supporting {
+  transform: translateY(96px);
+
+  animation: label-slide-up 1200ms forwards;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: label-slide-up 1200ms forwards;
+  -webkit-animation-delay: 0ms;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: label-slide-up 1200ms forwards;
+  -moz-animation-delay: 0ms;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: label-slide-up 1200ms forwards;
+  -o-animation-delay: 0ms;
+  -o-animation-fill-mode: forwards;
+}
+
+@keyframes label-slide-up {
+  from {transform: translateY(96px); display: none;}
+  to {transform: translateY(0px); display: block;}
+}
+
+@-webkit-keyframes label-slide-up {
+  from {transform: translateY(96px); display: none;}
+  to {transform: translateY(0px); display: block;}
+}
+
+@-moz-keyframes label-slide-up {
+  from {transform: translateY(96px); display: none;}
+  to {transform: translateY(0px); display: block;}
+}
+
+@-o-keyframes label-slide-up {
+  from {transform: translateY(96px); display: none;}
+  to {transform: translateY(0px); display: block;}
+}
+
+.mdc-image-list__item {
+  opacity: .9;
+
+  animation: focus-image 2400ms reverse;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: focus-image 2400ms reverse;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: focus-image 2400ms reverse;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: focus-image 2400ms reverse;
+  -o-animation-fill-mode: forwards;
+}
+
+.mdc-image-list__item:hover {
+  opacity: .9;
+
+  animation: focus-image 2400ms forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: focus-image 2400ms forwards;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: focus-image 2400ms forwards;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: focus-image 2400ms forwards;
+  -o-animation-fill-mode: forwards;
+}
+
+@keyframes focus-image {
+  from {opacity: .9;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes focus-image {
+   from {opacity: .9;}
+  to {opacity: 1;}
+}
+
+@-moz-keyframes focus-image {
+   from {opacity: .9;}
+  to {opacity: 1;}
+}
+
+@-o-keyframes focus-image {
+   from {opacity: .9;}
+  to {opacity: 1;}
+}
+
+
+.mdc-image-list__item .mdc-image-list__supporting {
+  cursor: pointer;
   overflow: hidden;
-  text-overflow: ellipsis;
-  background-color: transparentize($color: #000000, $amount: 0.50);
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  color: white;
-  padding: 5px;
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
 
-  transition: all 0.3s ease;
-  visibility: hidden;
-  opacity: 0;
+  animation: label-slide-down 1200ms forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: label-slide-down 1200ms forwards;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: label-slide-down 1200ms forwards;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: label-slide-down 1200ms forwards;
+  -o-animation-fill-mode: forwards;
 }
 
-.image-list-item:hover .image-list-item__caption {
-  visibility: visible;
-  opacity: 1;
+@keyframes label-slide-down {
+  from {transform: translateY(0px); display: block;}
+  to {transform: translateY(96px); display: none;}
+}
+
+@-webkit-keyframes label-slide-down {
+  from {transform: translateY(0px); display: block;}
+  to {transform: translateY(96px); display: none;}
+}
+
+@-moz-keyframes label-slide-down {
+  from {transform: translateY(0px); display: block;}
+  to {transform: translateY(96px); display: none;}
+}
+
+@-o-keyframes label-slide-down {
+  from {transform: translateY(0px); display: block;}
+  to {transform: translateY(96px); display: none;}
 }

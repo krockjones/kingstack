@@ -27,8 +27,7 @@
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "./node_modules/@material/image-list/mdc-image-list.import.scss",
               "./node_modules/@material/image-list/mdc-image-list.scss",
-              "./node_modules/@material/image-list/dist/mdc.image-list.css",
-              "src/styles.scss"
+              "./node_modules/@material/image-list/dist/mdc.image-list.css"
             ],
             "stylePreprocessorOptions": {
    "includePaths": [

@@ -1,4 +1,4 @@
-<div class="container" [class.is-mobile]="mobileQuery.matches">
+<div (window:resize)="(isSideNavOpen() === true) ? this.navbar.adjustFixedNav(isSideNavOpen()) : null;"  class="container" [class.is-mobile]="mobileQuery.matches">
   <mat-toolbar color="primary" class="toolbar" style="width: 100%">
     <button mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon></button>
@@ -10,9 +10,9 @@
     </div>
   </mat-toolbar>
 
-  <mat-sidenav-container class="sidenav-container"
+  <mat-sidenav-container id="side-nav" class="sidenav-container"
                          [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-    <mat-sidenav opened="true" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+    <mat-sidenav opened="false"  #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list>
         <hr class="side-nav-line-break" id="side-nav-line-break-first">
@@ -26,7 +26,7 @@
       <app-footer></app-footer>
     </mat-sidenav>
     <mat-sidenav-content>
-      <router-outlet></router-outlet>
+      <router-outlet (activate)='onActivate($event)'></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

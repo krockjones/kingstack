@@ -6,7 +6,6 @@
 @use "@material/image-list";
 @import "material-components-web/material-components-web";
 
-
 @include textfield.core-styles;
 
 .my-image-list {
@@ -16,8 +15,6 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-
 
 .fade-in {
   opacity: 0;
